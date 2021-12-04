@@ -10,10 +10,10 @@ function getPassword() {
   var password = "";
 
   var passwordLength=prompt("How many characters would you like your password to have?")
-  alert("Click OK if you would like to include special characters?")
-  alert("Click OK if you would like to include uppercase characters?")
-  alert("Click OK if you would like to include lowercase characters?")
-  alert("Click OK if you would like to include number characters?")
+  confirm("Click OK if you would like to include special characters?")
+  confirm("Click OK if you would like to include uppercase characters?")
+  confirm("Click OK if you would like to include lowercase characters?")
+  confirm("Click OK if you would like to include number characters?")
   
   for(let i=0; i < passwordLength; i++) {
     var randomNumber = Math.floor(Math.random() * chars.length);
